@@ -1,6 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
+const path = require('path');
 require('dotenv').config();
 const { dbConnection } = require('./db');
 
@@ -11,6 +12,7 @@ dbConnection();
 
 
 // Middlewares
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
@@ -19,6 +21,7 @@ app.use(cors());
 
 // Routes
 app.use('/api/user', require('./routes/userRoutes'));
+app.use('/api/img', require('./routes/imageRoutes'));
 
 
 
