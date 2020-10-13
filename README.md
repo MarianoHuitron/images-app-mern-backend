@@ -1,6 +1,7 @@
-# Backend Login con Node, Mongo y JWT
+# Backend Images App MERN
 
-Backend creado en NodeJs para una pequeña aplicación de autenticación con React Js.
+Backend creado en NodeJs para una pequeña aplicación de imagenes con autenticacion por JWT.
+
 
 ### Variables de entorno
 
