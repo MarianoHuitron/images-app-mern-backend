@@ -16,3 +16,5 @@ npm install
 npm run dev
 ```
 
+ 
+[Repositorio de frontend en react](https://github.com/MarianoHuitron/images-app-mern-frontend)
